@@ -1,0 +1,51 @@
+<Inplementa@BoxLayout>:
+    BoxLayout:
+        orientation:"vertical"
+        cols:1 
+        rows:2
+        padding:5
+        BoxLayout:
+            orientation:"horizontal"
+            pos_hint:{'top': 0.1}
+            size_hint:1,None
+            height:'38dp'
+            ToggleButton:
+                text: "Arquivo"
+                
+            Button:
+                text: 'Iniciar'            
+                on_press: root.Editar()
+            Button:
+                text: 'Exibir'
+                on_press: root.Exibir()
+            Button:
+                text: 'Relatorio'
+                on_press: root.Relatorio()
+            Button:
+                text: 'Configuracao'
+                on_press: root.Configuracao()
+            Button:
+                text: 'Sair'
+                on_press: root.Manuntecao()
+            
+        GridLayout:
+            cols:1
+            rows:1
+            size_hint:1,1
+            Image:
+                source:"/home/greg/Imagens/logo.png"
+   
+<Janelas>:
+    orientation: "vertical"
+    GridLayout:
+        orientation:"vertical"
+        cols:1 
+        rows:2
+        padding:500,500
+        Label:
+            text:"Configuracao"
+            Button:
+                text:"Voltar"
+                on_press: root.Voltar()
+
+Inplementa:
